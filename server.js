@@ -1,6 +1,7 @@
+const { Router } = require('express');
 const express = require('express');
 const app = express();
-const route = express.Router();
+const router = express.Router();
 const mongoose = require('mongoose');
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
@@ -10,8 +11,13 @@ app.use(express.json());
 mongoose.connect("mongodb+srv://sugatov88:mRMONGODB215487@ciclo4cluster.mbfzy.mongodb.net/retoMongoDB?retryWrites=true&w=majority")
 
 // operaciones CRUD
+router.get ('/',(req, res)=>{
+    res.send(
+        "inicio del primer API"
+    );
+});
 
-app.use(route)
+app.use(router)
 app.listen(3000, ()=> {
     console.log("servidor corriendo en el puerto 3000");
 })
