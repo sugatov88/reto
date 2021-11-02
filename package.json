@@ -1,0 +1,11 @@
+{
+  "name": "reto",
+  "version": "1.0.0",
+  "description": "ejercicio 1 de la semana 1",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Diaz",
+  "license": "ISC"
+}
